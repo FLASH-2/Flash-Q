@@ -40,7 +40,7 @@ from config import BANNED_USERS, OWNER_ID
 
 
 @app.on_message(
-    command(["settings", "الاعدادات", "اعدادات"]) & filters.group & ~BANNED_USERS
+    filters.command(["settings", "الاعدادات"]) & filters.group & ~BANNED_USERS
 )
 @language
 async def settings_mar(client, message: Message, _):
