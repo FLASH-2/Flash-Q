@@ -21,7 +21,7 @@ async def MUST_JOINN_channel(bot: Client, msg: Message):
                     f"❃︙عذࢪاَ عزيزي ↫ {msg.from_user.mention} \n❃︙عـليك الاشـتࢪاك في قنـاة البـوت اولآ .\nꔹ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ ┉ꔹ",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
-                        [InlineKeyboardButton("« ᥴ𝗁ᥲᥒᥒᥱᥣ ᥉᥆υᖇᥴᥱ »", url=link)]
+                        [InlineKeyboardButton("« ᘜᖇ᥆υρ ᥉᥆υᖇᥴᥱ »", url=link)]
                     ])
                 )
                 await msg.stop_propagation()
