@@ -16,9 +16,7 @@ checker = []
 
 
 @app.on_message(
-    command(["cspeed", "speed", "سرعة", "سرعه"])
-    & filters.group
-    & ~BANNED_USERS
+    command(["cspeed", "speed", "سرعة", "سرعه"]) & ~BANNED_USERS
 )
 @AdminRightsCheck
 async def playback(cli, message: Message, _, chat_id):
