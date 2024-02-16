@@ -1,5 +1,3 @@
-
-
 from pyrogram import filters
 from pyrogram.types import Message
 
@@ -16,7 +14,9 @@ checker = []
 
 
 @app.on_message(
-    command(["cspeed", "speed", "سرعة", "سرعه"]) & ~BANNED_USERS
+    filters.command(["cspeed", "speed", "cslow", "slow", "سرعه", "سرعة"])
+    & filters.group
+    & ~BANNED_USERS
 )
 @AdminRightsCheck
 async def playback(cli, message: Message, _, chat_id):
