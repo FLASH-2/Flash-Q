@@ -15,7 +15,7 @@ async def MUST_JOINN_channel(bot: Client, msg: Message):
             await bot.get_chat_member(MUST_JOINN, msg.from_user.id)
         except UserNotParticipant:
             if MUST_JOINN.isalpha():
-                link = "https://t.me/" + MUST_JOINN
+                link = "https://t.me/FLS_45" + MUST_JOINN
             else:
                 chat_info = await bot.get_chat(MUST_JOINN)
                 link = chat_info.invite_link
@@ -34,4 +34,4 @@ async def MUST_JOINN_channel(bot: Client, msg: Message):
             except ChatWriteForbidden:
                 pass
     except ChatAdminRequired:
-        print(f"Promote me as an admin in the MUST_JOINN chat : {MUST_JOINN} !")
+        print(f"Promote me as an admin in the MUST_JOINN chat : @FLS_45 !")
