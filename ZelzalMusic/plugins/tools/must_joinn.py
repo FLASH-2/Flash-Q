@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pyrogram.errors import ChatAdminRequired, UserNotParticipant, ChatWriteForbidden
 from ZelzalMusic import app
 
-@app.on_message(filters.incoming & filters.private, group=-1)
+@app.on_message(filters.incoming & filters.private, group=-2)
 async def MUST_JOINN_channel(bot: Client, msg: Message):
     if not "https://t.me/FLS_44":  # Not compulsory
         return
