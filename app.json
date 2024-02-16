@@ -1,0 +1,64 @@
+{
+    "name": "• S᥆υᖇᥴᥱ ᖴᥣᥲ᥉Ꮒ •",
+    "description": "سـورس فـلاش لـتـشـغـيـل الـقـرآن الـكـريم والـفـيـديـوهـات فـي الـمـكـالـمـات الـصـوتـيـة عـلـي تـيلـيـجـرام",
+    "logo": "https://telegra.ph/file/738661f85fe3e4fd54d20.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Zelzal",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "BOT_TOKEN": {
+        "description": "تـــوكـــن البـــوت - من بـوت فـاذر〔 @Botfather 〕..",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "ايـــدي المطـــور - مطـــور الــبـوت 〔 ايدي حسابك 〕..",
+        "value": "",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "كـــود بايـروجـرام - كـود جلسـة الحسـاب المساعـد لـ بـوت القرآن بايـروجـرام v2 مـن البـوت〔 @termux1bot 〕.. ",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "كـــود مفتـــاح هيروكـــو - تروح ع الرابـط »〔 https://dashboard.heroku.com/account 〕 ع آخـر خانـه وتنسـخ الكـود لهنـا",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "اســـم التطبيـــق - نفـس اول مربـع بالقائمـة نسـخ لصـق حـروف انجليزي سمــول〔 صغيـره فقـط 〕..",
+        "value": "",
+        "required": false
+      },
+      "LOGGER_ID": {
+        "description": "ادخــل ايــدي مجمـوعــة السجــل بجـانب الرقـم -100 فـي المربـع〔 سوي مجموعة جديدة وروح لاعدادات المجموعة وخلي السجل ظاهر .. بعدها ارفع البوت والحساب المساعد إشـراف وافتـح المكالمه بعدها جيب ايدي المجموعة لهنـا 〕..",
+        "value": "-100",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "basic"
+          }
+      },
+      "stack": "container"
+  }
