@@ -68,3 +68,5 @@ apscheduler
 telegraph[aio]
 asyncstdlib
 enums
+get_command
+strings
