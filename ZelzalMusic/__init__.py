@@ -5,6 +5,7 @@ from ZelzalMusic.core.dir import dirr
 from ZelzalMusic.core.git import git
 from ZelzalMusic.core.userbot import Userbot
 from ZelzalMusic.misc import dbb, heroku
+from strings import get_command
 
 from .logging import LOGGER
 
