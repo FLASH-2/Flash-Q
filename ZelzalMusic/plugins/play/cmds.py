@@ -50,19 +50,19 @@ async def zilzal(client: Client, message: Message):
     name = usr.first_name
     usrnam = usr.username
     async for photo in client.iter_profile_photos(OWNER_ID, limit=1):
-                    await message.reply_photo(photo.file_id,       caption=f"""ٴ<b>•────‌‌‏✯ ᴇ_ᴍᴜsɪᴄ ✯──‌‌‏─‌‌‏─•</b>
+                    await message.reply_photo(photo.file_id,       caption=f"""ٴ<b>•────‌‌‏❃ ǫᴜʀᴀɴ ❃──‌‌‏─‌‌‏─•</b>
                     
 - المطور :[{usr.first_name}](https://t.me/{OWNER})
 - اليوزر :@{usrnam} 
 - الايدي :`{usr.id}`
  
-ٴ<b>•────‌‌‏✯ ᴇ_ᴍᴜsɪᴄ ✯──‌‌‏─‌‌‏─•</b> """, 
+ٴ<b>•────‌‌‏❃ ǫᴜʀᴀɴ ❃──‌‌‏─‌‌‏─•</b> """, 
 reply_markup=InlineKeyboardMarkup(
           [               
             [            
               InlineKeyboardButton (name, url=f"https://t.me/{usrnam}"),
             ],[
-              InlineKeyboardButton("•LorD Music•", url="https://t.me/M_r_zC"),
+              InlineKeyboardButton("• S᥆υᖇᥴᥱ ᖴᥣᥲ᥉Ꮒ •", url="https://t.me/FLS_44"),
             ],
           ]
        )                 
