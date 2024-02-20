@@ -106,26 +106,6 @@ async def khalid(client: Client, message: Message):
         ),
     )
 
-@app.on_message(
-     command(["شغل","تشغيل","سوره","سورة","اغنيه","اغنية","/skip","/settings","/play","/vplay","/stop"])
-    & filters.private
-    & ~filters.edited
-)
-async def khalid(client: Client, message: Message):
-    await message.reply_photo(
-        photo=f"https://telegra.ph/file/738661f85fe3e4fd54d20.jpg",
-        caption=f""" • عذرا  !. لا يمكنك التشغيل في الخاص\n\n• قم بأنشاء جروب ثم ضفني لكي اعمل\n\n• معلومات التشغيل انضم @FLS_44\n\n• البوت القرآن  @Boksha4bot\n\n• تقدر تشغل كل ما تحتاجه """,
-        reply_markup=InlineKeyboardMarkup(
-            [
-                [
-                InlineKeyboardButton("‹ اضف البوت لمجموعتك ›", url=f"https://t.me/Boksha4bot?startgroup=true"),
-                ],[
-                InlineKeyboardButton(
-                        "‹ ᥴ𝗁ᥲᥒᥒᥱᥣ ᥉᥆υᖇᥴᥱ . ⚡️ ›", url=f"https://t.me/FLS_44"), 
-                ]
-            ]
-        ),
-    )
 
 @app.on_message(
      command(["اسمي"])
