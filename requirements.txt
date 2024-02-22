@@ -23,4 +23,3 @@ unidecode
 yt-dlp==2023.11.16 
 youtube-search
 youtube-search-python
-get_command
