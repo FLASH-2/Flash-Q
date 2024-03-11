@@ -1,15 +1,15 @@
 from pyrogram import filters, Client
-from AlexaMusic import app
+from ZelzalMusic import app
 import asyncio
 from pytgcalls import PyTgCalls, StreamType
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
-from AlexaMusic.core.call import Abod
-from AlexaMusic.utils.database import *
+from ZelzalMusic.core.call import Zelzaly
+from ZelzalMusic.utils.database import *
 from pytgcalls.exceptions import (NoActiveGroupCall,TelegramServerError,AlreadyJoinedError)
 
 @app.on_message(filters.regex("^مين في الكول$"))
 async def strcall(client, message):
-    assistant = await group_assistant(Abod,message.chat.id)
+    assistant = await group_assistant(Zelzaly,message.chat.id)
     try:
         await assistant.join_group_call(message.chat.id, AudioPiped("./Alexa/assets/call.mp3"), stream_type=StreamType().pulse_stream)
         text="🙃🔔 المتواجدين في الكول :\n\n"
