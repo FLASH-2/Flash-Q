@@ -1,13 +1,8 @@
-# A Powerful Music Bot Property Of Rocks Indian Largest Chatting Group
-# Without Credit (Mother Fucker)
-# Rocks © @Dr_Asad_Ali © Rocks
-# Owner Asad Ali
-# Harshit Sharma
 
 
 from typing import Dict, List, Union
 
-from AlexaMusic.core.mongo import mongodb
+from ZelzalMusic.core.mongo import mongodb
 
 chatsdb = db.chats
 

@@ -5,7 +5,7 @@
 
 
 from typing import Dict, List, Union
-from AlexaMusic.core.mongo import mongodb
+from ZelzalMusic.core.mongo import mongodb
 
 themedb = mongodb.notes
 
