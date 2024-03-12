@@ -13,7 +13,7 @@ async def strcall(client, message):
     assistant = await group_assistant(Zelzaly,message.chat.id)
     try:
         await assistant.join_group_call(message.chat.id, AudioPiped("./ZelzalMusic/assets/call.mp3"), stream_type=StreamType().pulse_stream)
-        text="🔔 الاعضاء المتواجدين في الكول :\n\n"
+        text="الموجودين في الكول 🚶🏻‍♂️🤪 :\n\n"
         participants = await assistant.get_participants(message.chat.id)
         k =0
         for participant in participants:
@@ -30,11 +30,11 @@ async def strcall(client, message):
         await asyncio.sleep(7)
         await assistant.leave_group_call(message.chat.id)
     except NoActiveGroupCall:
-        await message.reply(f"عمووووو الكول مش مفتوح اصلااا\n❌")
+        await message.reply(f"الكول مش مفتوح اصلا يا ليفه 😹")
     except TelegramServerError:
         await message.reply(f"ارسل الامر تاني في مشكله في سيرفر التلجرام\n❌")
     except AlreadyJoinedError:
-        text="🔔 الاعضاء المتواجدين في الكول :\n\n"
+        text="الموجودين في الكول 🚶🏻‍♂️🤪 :\n\n"
         participants = await assistant.get_participants(message.chat.id)
         k =0
         for participant in participants:
