@@ -13,6 +13,8 @@ API_HASH = getenv("API_HASH", "efd77b34c69c164ce158037ff5a0d117")
 # Get your token from @BotFather on Telegram.
 BOT_TOKEN = getenv("BOT_TOKEN")
 
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID"))
+
 # Get your mongo url from cloud.mongodb.com
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://proceed58:proceed58@cluster0.p5s9ym5.mongodb.net/?retryWrites=true&w=majority")
 
@@ -32,7 +34,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/FLASH-2/Flash-Q",
+    "https://github.com/MohammedELPOP/Flash-Q",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 GIT_TOKEN = getenv(
