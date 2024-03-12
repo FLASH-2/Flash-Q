@@ -12,7 +12,9 @@ from ZelzalMusic import app
 from asyncio import gather
 
 
-@app.on_message(command(["تليجراف", "تليجراف ميديا", "ميديا"]) & ~filters.edited)
+@app.on_message(
+    command(["تليجراف", "تليجراف ميديا", "ميديا"])
+)
 async def telegraph(client: Client, message: Message):
     replied = message.reply_to_message
     if not replied:
