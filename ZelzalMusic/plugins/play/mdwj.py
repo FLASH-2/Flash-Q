@@ -65,9 +65,8 @@ async def telegraph(client: Client, message: Message):
 
 
 
-
 @app.on_message(
-    command(["معلوماته", "كشف"])
+    command(["معلوماته","كشف"])
 ) 
 async def hshs(client: Client, message: Message):      
     usr = await client.get_users(message.reply_to_message.from_user.id)
@@ -91,6 +90,7 @@ async def hshs(client: Client, message: Message):
 
 
 
+
 @app.on_message(
     command(["بايو","البايو"])
 )
@@ -99,8 +99,12 @@ async def biio(client, message):
   bio = nq.bio
   await message.reply_text(bio
   )
+
+
+
+
 @app.on_message(
-    command(["انا مين", "معلوماتي", "شخصيه"])
+    command(["انا مين","معلوماتي","شخصيه"])
 )
 async def ppdi(client: Client, message: Message):
     usr = await client.get_users(message.from_user.id)
@@ -116,12 +120,12 @@ async def ppdi(client: Client, message: Message):
             ]
         ),
     )
- 
- 
- 
- 
+
+
+
+
 @app.on_message(
-    command(["تحويل_لصوره", "تحويل الصوره"])
+    command(["تحويل_لصوره","تحويل الصوره"])
 )
 async def sticker_image(client: Client, message: Message):
     reply = message.reply_to_message
@@ -137,8 +141,9 @@ async def sticker_image(client: Client, message: Message):
 
 
 
+
 @app.on_message(
-    command(["الجروب", "جروب"])
+    command(["الجروب","جروب"])
 )
 async def ginnj(client: Client, message: Message):
     chat_idd = message.chat.id
