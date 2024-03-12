@@ -1,6 +1,6 @@
 import os
 from typing import List
-
+from strings import get_command
 import yaml
 
 languages = {}
