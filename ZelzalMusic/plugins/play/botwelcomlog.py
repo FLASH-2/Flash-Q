@@ -3,7 +3,7 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 from ZelzalMusic import app
 from ZelzalMusic.utils.database import get_served_chats
-from config import LOG_GROUP_ID
+from config import LOGGER_ID
 
 
 async def lul_message(chat_id: int, message: str):
@@ -22,4 +22,4 @@ async def on_new_chat_members(client: Client, message: Message):
         else:
             chatusername = "ᴩʀɪᴠᴀᴛᴇ ᴄʜᴀᴛ"
         lemda_text = f"🌹 تم اضافة البوت لجروب جديد ..\n\n┏━━━━━━━━━━━━━━━━━┓\n┣★ **الدردشة** › : {matlabi_jhanto}\n┣★ **ايدي الدردشة** › : {chat_id}\n┣★ **يوزر الدردشه** › : {chatusername}\n┣★ **مجموع الدردشات** › : {served_chats}\n┣★ **اضيف بواسطة** › :\n┗━━━ {added_by}"
-        await lul_message(LOG_GROUP_ID, lemda_text)
+        await lul_message(LOGGER_ID, lemda_text)
