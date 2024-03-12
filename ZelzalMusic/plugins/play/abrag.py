@@ -12,7 +12,9 @@ from pyrogram.types import (InlineKeyboardButton,CallbackQuery,InlineKeyboardMar
 from ZelzalMusic import (Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app)
 from ZelzalMusic.misc import SUDOERS
 
-@app.on_message(command(["ابراج"]))
+@app.on_message(
+    command(["ابراج"])
+)
 async def abrag(c: Client, m: Message):
     global mid
     mid = m.message_id
