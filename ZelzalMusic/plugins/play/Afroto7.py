@@ -837,5 +837,5 @@ async def zahrafa(c: Client, m: Message):
                  + "\n\n " + zhrf8 + random.choice(Emoje) \
                  + "\n\n " + zhrf9 + random.choice(Emoje) \
                  + "\n\n " + zhrf5 + random.choice(Emoje)
-    Text_Zhrfa = Text_Zhrfa + "\n\n المس سيتم نسخ الاسم \n│ \n👾"
+    Text_Zhrfa = Text_Zhrfa + ""
     await m.reply_text(Text_Zhrfa, reply_to_message_id=m.id)
