@@ -19,22 +19,22 @@ from random import  choice, randint
 async def huhh(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/738661f85fe3e4fd54d20.jpg",
-        caption=f"""« S᥆υᖇᥴᥱ ᖴᥣᥲ᥉Ꮒ »""",
+        caption=f"""❃ 𝚃𝙷𝙴 𝙱𝙴𝚂𝚃 𝚂𝙾𝚄𝚁𝙲𝙴 𝙾𝙽 𝚃𝙴𝙻𝙴𝙶𝚁𝙰𝙼""",
         reply_markup=InlineKeyboardMarkup(
         [
             [
                     InlineKeyboardButton(
-                        "« ᗩძძ TᏂᥱ ᙖ᥆T T᥆ Y᥆ᥙɾ ᘜɾ᥆ᥙρ »", url=f"https://t.me/{app.username}?startgroup=true"),
+                        "𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ", url=f"https://t.me/{app.username}?startgroup=true"),
                 ],[
                     InlineKeyboardButton(
-                        "« ᥴ𝗁ᥲᥒᥒᥱᥣ ᥉᥆υᖇᥴᥱ »", url=f"https://t.me/OOOJ30"),
+                        "𝙲𝙷𝙰𝙽𝙽𝙴𝙻 𝚂𝙾𝚄𝚁𝙲𝙴", url=f"https://t.me/FLS_44"),
                     InlineKeyboardButton(
-                        "« ᘜᖇ᥆υρ ᥉᥆υᖇᥴᥱ »", url=f"https://t.me/M_4_M_C"),
+                        "𝙶𝚁𝙾𝚄𝙿 𝚂𝙾𝚄𝚁𝙲𝙴", url=f"https://t.me/FLS_45"),
                 ],[
                     InlineKeyboardButton(
-                        "« ժᥱ᥎ ᙓᥣ ᑭ᥆ᑭ ", user_id=5627420357),
+                        "𝙳𝙴𝚅 𝙴𝙻𝙿𝙾𝙿", user_id=5627420357),
                 ],[
-                    InlineKeyboardButton(text="« مسح »", callback_data="close"),   
+                    InlineKeyboardButton(text="𝙲𝙻𝙾𝚂𝙴", callback_data="close"),   
             ]
         ]
          ),
