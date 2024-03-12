@@ -827,15 +827,15 @@ async def zahrafa(c: Client, m: Message):
     zhrf9 = re.sub('m', '𝕄', zhrf9)
     zhrf9 = re.sub('M', '𝕄', zhrf9)
 
-    Text_Zhrfa = "♕ `" + zhrf + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf2 + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf3 + random.choice(EmojeS) \
-                 + "•\n\n` " + zhrf4 + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf5 + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf6 + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf7 + random.choice(EmojeS) \
-                 + "`\n\n` " + zhrf8 + random.choice(Emoje) \
-                 + "`\n\n` " + zhrf9 + random.choice(Emoje) \
-                 + "`\n\n` " + zhrf5 + random.choice(Emoje)
+    Text_Zhrfa = "♕ " + zhrf + random.choice(EmojeS) \
+                 + "\n\n " + zhrf2 + random.choice(EmojeS) \
+                 + "\n\n " + zhrf3 + random.choice(EmojeS) \
+                 + "•\n\n " + zhrf4 + random.choice(EmojeS) \
+                 + "\n\n " + zhrf5 + random.choice(EmojeS) \
+                 + "\n\n " + zhrf6 + random.choice(EmojeS) \
+                 + "\n\n " + zhrf7 + random.choice(EmojeS) \
+                 + "\n\n " + zhrf8 + random.choice(Emoje) \
+                 + "\n\n " + zhrf9 + random.choice(Emoje) \
+                 + "\n\n " + zhrf5 + random.choice(Emoje)
     Text_Zhrfa = Text_Zhrfa + "\n\n المس سيتم نسخ الاسم \n│ \n👾"
     await m.reply_text(Text_Zhrfa, reply_to_message_id=m.id)
